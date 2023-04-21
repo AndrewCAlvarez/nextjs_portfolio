@@ -1,0 +1,9 @@
+.nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.icon-menu {
+  height: 1rem;
+}

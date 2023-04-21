@@ -1,0 +1,7 @@
+.tag {
+  color: var(--primary);
+}
+
+.text {
+  color: var(--text-shade);
+}
