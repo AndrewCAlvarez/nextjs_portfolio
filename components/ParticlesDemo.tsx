@@ -27,6 +27,7 @@ export default function ParticlesDemo() {
         className={styles.tsParticles}
         init={particlesInit}
         loaded={particlesLoaded}
+        height="20px"
         options={{
           background: {
             color: {
@@ -48,7 +49,7 @@ export default function ParticlesDemo() {
             },
             modes: {
               push: {
-                quantity: 4,
+                quantity: 0,
               },
               repulse: {
                 distance: 200,
