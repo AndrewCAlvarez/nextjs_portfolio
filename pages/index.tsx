@@ -20,6 +20,7 @@ export default function Home() {
       <main className={styles.main}>
         <Hero />
       </main>
+      <h1>TEST</h1>
     </>
   );
 }

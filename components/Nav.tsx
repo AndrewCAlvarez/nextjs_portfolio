@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       <div>A</div>
-      <Image className="icon-menu" priority src={menuIcon} alt="Menu icon." />
+      {/* <Image className="icon-menu" priority src={menuIcon} alt="Menu icon." /> */}
     </nav>
   );
 }

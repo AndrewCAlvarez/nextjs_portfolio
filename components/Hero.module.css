@@ -1,7 +1,16 @@
+.hero {
+  width: 100%;
+}
+
 .tag {
   color: var(--primary);
 }
 
 .text {
   color: var(--text-shade);
+}
+
+.subHeading {
+  color: var(--text-shade);
+  font-weight: bold;
 }

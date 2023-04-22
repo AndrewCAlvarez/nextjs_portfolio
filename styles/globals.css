@@ -11,8 +11,16 @@ body {
   color: var(--text);
   background-color: var(--black);
   margin: 0;
-  padding: 0rem 2rem;
+  padding: 0;
   box-sizing: border-box;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 p {
