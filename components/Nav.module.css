@@ -1,9 +1,15 @@
 .nav {
-  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  height: 5vh;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  background-color: var(--black-shade);
 }
 
-.icon-menu {
-  height: 1rem;
+.iconMenu {
+  /* height: 1rem; */
+  /* margin-right: 20rem; */
 }
