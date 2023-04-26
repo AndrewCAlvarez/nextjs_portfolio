@@ -1,6 +1,8 @@
+import utils from "../styles/utils.module.css";
+
 export default function Experience() {
   return (
-    <section>
+    <section className={utils.container}>
       <h2>Experience</h2>
       <ul>
         <div>

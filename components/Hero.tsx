@@ -1,9 +1,10 @@
 import styles from "./Hero.module.css";
+import utils from "../styles/utils.module.css";
 import ParticlesDemo from "./ParticlesDemo";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className={utils.container}>
       <ParticlesDemo />
 
       <p className={styles.tag}>Hi, my name is</p>

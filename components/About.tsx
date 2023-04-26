@@ -1,8 +1,9 @@
 import Image from "next/image";
+import utils from "../styles/utils.module.css";
 
 export default function About() {
   return (
-    <section>
+    <section className={utils.container}>
       <h2>About Me</h2>
       <p>
         - I'm Andrew Alvarez, a web developer with a passion for creating
