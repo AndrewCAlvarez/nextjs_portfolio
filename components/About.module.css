@@ -1,0 +1,62 @@
+.about {
+  background-color: var(--black);
+  word-wrap: break-word;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.heading {
+  columns: 0/ 2;
+}
+
+.picContainer {
+  position: relative;
+  /* border: 1px solid black; */
+  height: 15rem;
+  margin-top: 0.5rem;
+}
+
+.profilePic {
+  transition: all 0.3s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  filter: grayscale(60%);
+}
+
+.profilePic0 {
+  z-index: 10;
+}
+
+.profilePic0Display {
+  z-index: 10;
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  border: 2px solid var(--primary);
+  /* padding: 0.5rem; */
+  border-radius: 0.4rem;
+}
+
+.profilePic1Display {
+  position: absolute;
+  transform: rotateZ(-25deg);
+  left: -8rem;
+}
+
+.profilePic2Display {
+  position: absolute;
+  left: 8rem;
+  transform: rotateZ(20deg);
+}
+
+.profilePic3Display {
+  position: absolute;
+  left: 3rem;
+  top: 2rem;
+  transform: rotateZ(-24deg);
+}
+
+.text {
+}
