@@ -17,14 +17,70 @@
   position: relative;
   border: 1px solid black;
   height: 15rem;
+  width: 100%;
   /* margin-top: 0.5rem; */
   padding: 2rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr, 1fr, 1fr);
+  /* grid-template-rows: repeat(, 1fr); */
+  gap: 0.3rem;
+}
+
+.profilePic {
+  transition: all 0.3s;
+  /* position: absolute;
+  left: 0;
+  right: 0; */
+  /* margin: 0 auto; */
+  filter: grayscale(60%);
+}
+
+.profilePic0 {
+  z-index: 10;
+  /* transform: scale(1.1); */
+  filter: grayscale(0%);
+  /* border: 2px solid var(--primary); */
+  /* padding: 0.5rem; */
+  border-radius: 0.1 rem;
+  grid-column: 1/2;
+}
+
+.profilePic1 {
+  /* position: absolute; */
+  /* transform: rotateZ(-25deg);
+  left: -8rem; */
+  /* left: -22rem;
+  top: -2rem;
+  transform: scale(0.5); */
+  grid-column: 2;
+}
+
+.profilePic2 {
+  /* position: absolute; */
+  /* grid-column: 1/2; */
+  /* left: 8rem;
+  transform: rotateZ(20deg); */
+  /* left: 15rem;
+  top: 1rem; */
+  /* transform: scale(0.6); */
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.profilePic3 {
+  /* position: absolute; */
+  /* left: 3rem;
+  top: 2rem;
+  transform: rotateZ(-24deg); */
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .glitch {
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  /* left: 0;
+  right: 0; */
+  /* margin: 0 auto; */
+  grid-column: 1/2;
   filter: grayscale(100%);
 }
 
@@ -278,55 +334,4 @@
     opacity: 0;
     transform: translate3d(0, 0, 0);
   }
-}
-
-.profilePic {
-  transition: all 0.3s;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-
-  filter: grayscale(60%);
-}
-
-.profilePic0 {
-  z-index: 10;
-}
-
-.profilePic0Display {
-  z-index: 10;
-  transform: scale(1.1);
-  filter: grayscale(0%);
-  /* border: 2px solid var(--primary); */
-  /* padding: 0.5rem; */
-  border-radius: 0.1 rem;
-}
-
-.profilePic1Display {
-  position: absolute;
-  /* transform: rotateZ(-25deg);
-  left: -8rem; */
-  left: -22rem;
-  top: -2rem;
-  transform: scale(0.5);
-}
-
-.profilePic2Display {
-  position: absolute;
-  /* left: 8rem;
-  transform: rotateZ(20deg); */
-  left: 15rem;
-  top: 1rem;
-  transform: scale(0.6);
-}
-
-.profilePic3Display {
-  position: absolute;
-  left: 3rem;
-  top: 2rem;
-  transform: rotateZ(-24deg);
-}
-
-.text {
 }

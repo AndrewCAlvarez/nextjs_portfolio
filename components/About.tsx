@@ -8,10 +8,9 @@ export default function About() {
     let pics = document.querySelectorAll(`.${styles.profilePic}`);
     let index = 0;
     pics.forEach((pic) => {
-      pic.className = [
-        styles.profilePic,
-        styles[`profilePic${index}Display`],
-      ].join(" ");
+      pic.className = [styles.profilePic, styles[`profilePic${index}`]].join(
+        " "
+      );
       index++;
     });
     console.log(pics);
@@ -42,44 +41,50 @@ export default function About() {
           className={[styles.glitch, styles.glitch1].join(" ")}
           src="/../public/cowboy_profile_pic.jpg"
           alt="Picture of Andrew."
-          width={200}
-          height={200}
+          // width={250}
+          // height={250}
+          fill
         />
         <Image
           className={[styles.glitch, styles.glitch2].join(" ")}
           src="/../public/cowboy_profile_pic.jpg"
           alt="Picture of Andrew."
-          width={200}
-          height={200}
+          // width={250}
+          // height={250}
+          fill
         />
         <Image
           className={[styles.glitch, styles.glitch3].join(" ")}
           src="/../public/cowboy_profile_pic.jpg"
           alt="Picture of Andrew."
-          width={200}
-          height={200}
+          // width={250}
+          // height={250}
+          fill
         />
         {/* Image gallery */}
         <Image
           className={[styles.profilePic, styles.profilePic0].join(" ")}
           src="/../public/cowboy_profile_pic.jpg"
           alt="Picture of Andrew."
-          width={200}
-          height={200}
+          // width={250}
+          // height={250}
+          fill
         />
         <Image
           className={[styles.profilePic, styles.profilePic1].join(" ")}
           src="/../public/cowboy_profile_pic.jpg"
           alt="Picture of Andrew."
-          width={200}
-          height={200}
+          // width={200}
+          // height={200}
+          fill
         />
         <Image
           className={[styles.profilePic, styles.profilePic2].join(" ")}
           src="/../public/cowboy_profile_pic.jpg"
           alt="Picture of Andrew."
-          width={200}
-          height={200}
+          // width={200}
+          // height={200}
+          fill
         />
         <Image
           className={[styles.profilePic, styles.profilePic3].join(" ")}
