@@ -1,7 +1,8 @@
 :root {
   --black: #343a40;
   --black-shade: #212529;
-  --primary: #22b8cf;
+  --primary: #0fa;
+  /* --primary: #22b8cf; */
   --secondary: #12b886;
   --text: #dee2e6;
   --text-shade: #adb5bd;
