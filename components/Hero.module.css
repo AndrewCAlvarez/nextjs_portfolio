@@ -4,7 +4,8 @@
   /* margin-top: 8rem; */
   background-color: rgba(0, 0, 0, 0.2);
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  /* padding-bottom: 12rem; */
+  height: 85vh;
 }
 
 .tag {

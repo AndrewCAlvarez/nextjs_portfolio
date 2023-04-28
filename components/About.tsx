@@ -37,6 +37,29 @@ export default function About() {
         onMouseOver={handleDisplayPic}
         onMouseLeave={handleHidePics}
       >
+        {/* This is a test for the glitch effect */}
+        <Image
+          className={[styles.glitch, styles.glitch1].join(" ")}
+          src="/../public/cowboy_profile_pic.jpg"
+          alt="Picture of Andrew."
+          width={200}
+          height={200}
+        />
+        <Image
+          className={[styles.glitch, styles.glitch2].join(" ")}
+          src="/../public/cowboy_profile_pic.jpg"
+          alt="Picture of Andrew."
+          width={200}
+          height={200}
+        />
+        <Image
+          className={[styles.glitch, styles.glitch3].join(" ")}
+          src="/../public/cowboy_profile_pic.jpg"
+          alt="Picture of Andrew."
+          width={200}
+          height={200}
+        />
+        {/* Image gallery */}
         <Image
           className={[styles.profilePic, styles.profilePic0].join(" ")}
           src="/../public/cowboy_profile_pic.jpg"
