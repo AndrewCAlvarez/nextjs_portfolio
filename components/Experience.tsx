@@ -7,7 +7,7 @@ import Heading from "./Heading";
 import Project from "./Project";
 
 const urbanUndergroundText =
-  "Urban Underground - HTML, CSS, Javascript - Urban Underground is personal project where I took the lessons learned about web design to create a beautiful page for a fictitious fashion magazine.";
+  "Urban Underground - HTML, CSS, Javascript - Urban Underground is a personal project where I took the lessons learned about web design to create a beautiful page for a fictitious fashion magazine.";
 const urbanUndergroundLink = "https://andrewcalvarez.github.io/rap-friends/";
 
 const konreadsText =
@@ -21,12 +21,14 @@ export default function Experience() {
       <Project
         image={UrbanUndergroundHero}
         title={"Urban Underground"}
+        tag={"Fashion"}
         text={urbanUndergroundText}
         link={urbanUndergroundLink}
       />
       <Project
         image={KonreadsHero}
         title={"Konreads"}
+        tag={"Literature"}
         text={konreadsText}
         link={konreadsLink}
       />

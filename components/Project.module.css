@@ -1,0 +1,32 @@
+.project {
+  margin-bottom: 4rem;
+  /* cursor: crosshair; */
+}
+
+.image {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.text-content {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.tag {
+  color: var(--secondary);
+  position: absolute;
+  top: -2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  color: var(--text-shade);
+  font-size: 1.2rem;
+}
