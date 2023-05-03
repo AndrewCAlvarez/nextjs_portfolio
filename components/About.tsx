@@ -3,6 +3,8 @@ import utils from "../styles/utils.module.css";
 import styles from "./About.module.css";
 import headshot from "../public/headshot.jpg";
 import { useEffect } from "react";
+import Heading from "./Heading";
+import Head from "next/head";
 
 export default function About() {
   function handleDisplayPic() {
@@ -39,9 +41,10 @@ export default function About() {
 
   return (
     <section className={styles.about}>
-      <h2 className={[styles.heading, styles["slide-top"]].join(" ")}>
+      {/* <h2 className={[styles.heading, styles["slide-top"]].join(" ")}>
         About Me
-      </h2>
+      </h2> */}
+      <Heading title="About Me" />
       <div className={styles.picContainer}>
         {/* This is for the glitch effect */}
         {/* <Image
@@ -102,9 +105,9 @@ export default function About() {
         I'm Andrew Alvarez, a web developer with a passion for creating
         beautiful and functional websites. I have honed my skills in web
         development and design to deliver exceptional results. My expertise lies
-        in frontend development using frameworks like React, and I am always up
-        for a new challenge. Whether you need a simple website or a complex web
-        application, I have the knowledge and skills to bring your vision to
+        in frontend development using frameworks like Next.js, and I am always
+        up for a new challenge. Whether you need a simple website or a complex
+        web application, I have the knowledge and skills to bring your vision to
         life.
       </p>
 

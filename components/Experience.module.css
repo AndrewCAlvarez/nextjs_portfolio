@@ -1,13 +1,5 @@
-.wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-
-  /* background-color: var(--black);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding-top: 4rem; */
+.section-about {
+  background-color: var(--black);
 }
 
 .sectionHeader {
@@ -17,18 +9,5 @@
   align-items: center;
   height: 100%;
   transform-style: preserve-3d;
-  z-index: -1;
-}
-
-.backgroundImage {
-  transform: translateZ(-10px) scale(2);
-}
-
-.backgroundImage,
-.foreground {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
   z-index: -1;
 }

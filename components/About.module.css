@@ -6,21 +6,9 @@
   padding-top: 4rem;
 }
 
-.heading {
-  color: var(--text);
-  font-weight: bold;
-  /* text-transform: uppercase; */
-  /* padding-bottom: 20px;*/
-  border-bottom: 2px solid var(--secondary);
-  width: 40vw;
-  padding-left: 5%;
-
-  /* color: #fff; */
-  text-shadow: 0 0 7px var(--text);
-}
-
 .text1 {
-  border: 1px solid var(--primary);
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
   margin: 4rem 5%;
   padding: 2rem 1rem 1rem 1rem;
   position: relative;
@@ -37,13 +25,9 @@
 .text2 {
   margin: 4rem 5%;
   padding: 1rem;
-  text-decoration: underline var(--secondary);
-}
-
-.slide-top {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  /* animation-iteration-count: infinite; */
+  /* text-decoration: underline var(--secondary); */
+  border-left: 1px solid var(--primary);
+  border-right: 1px solid var(--primary);
 }
 
 .picContainer {
@@ -373,16 +357,6 @@
  * ----------------------------------------
  */
 @-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-}
-@keyframes slide-top {
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
