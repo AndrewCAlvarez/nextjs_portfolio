@@ -1,19 +1,19 @@
-import Image from "next/image";
-import utils from "../styles/utils.module.css";
-import styles from "./About.module.css";
-import headshot from "../public/headshot.jpg";
-import { useEffect } from "react";
-import Heading from "./Heading";
-import Head from "next/head";
+import Image from 'next/image';
+import utils from '../styles/utils.module.css';
+import styles from './About.module.css';
+import headshot from '../public/headshot.jpg';
+import { useEffect } from 'react';
+import Heading from './Heading';
+import Head from 'next/head';
 
 export default function About() {
   function handleDisplayPic() {
-    console.log("enter");
+    console.log('enter');
     let pics = document.querySelectorAll(`.${styles.profilePic}`);
     let index = 0;
     pics.forEach((pic) => {
       pic.className = [styles.profilePic, styles[`profilePic${index}`]].join(
-        " "
+        ' '
       );
       index++;
     });
@@ -21,7 +21,7 @@ export default function About() {
   }
 
   function handleHidePics() {
-    console.log("Left");
+    console.log('Left');
     let pics: NodeListOf<Element> = document.querySelectorAll(
       `.${styles.profilePic}`
     );
@@ -36,15 +36,15 @@ export default function About() {
   }
 
   useEffect(() => {
-    console.log("Use Effect");
+    console.log('Use Effect');
   }, []);
 
   return (
-    <section className={styles.about}>
+    <section id='about' className={styles.about}>
       {/* <h2 className={[styles.heading, styles["slide-top"]].join(" ")}>
         About Me
       </h2> */}
-      <Heading title="About Me" />
+      <Heading title='About Me' />
       <div className={styles.picContainer}>
         {/* This is for the glitch effect */}
         {/* <Image
@@ -71,9 +71,9 @@ export default function About() {
 
         {/* Image gallery */}
         <Image
-          className={[styles.profilePic, styles.profilePic0].join(" ")}
+          className={[styles.profilePic, styles.profilePic0].join(' ')}
           src={headshot}
-          alt="Picture of Andrew."
+          alt='Picture of Andrew.'
           // width={250}
           // height={250}
         />

@@ -1,16 +1,18 @@
 .project {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
   /* cursor: crosshair; */
 }
 
 .image {
   max-inline-size: 100%;
   block-size: auto;
+  margin-bottom: 1.2rem;
 }
 
 .text-content {
   position: relative;
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .tag {
@@ -29,4 +31,17 @@
 .text {
   color: var(--text-shade);
   font-size: 1.2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  background: var(--text-shade);
+  margin-top: 2rem;
 }
