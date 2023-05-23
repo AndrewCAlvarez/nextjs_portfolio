@@ -17,7 +17,7 @@ export default function Project(props: any) {
         </a>
         <p className={styles.text}>{props.text}</p>
         <a className={styles.link} href={props.link}>
-          Live Demo &rarr;
+          Live Demo
         </a>
       </div>
       <div className={styles.divider}></div>
