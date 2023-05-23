@@ -102,13 +102,13 @@ export default function About() {
         /> */}
       </div>
       <p className={styles.text1}>
-        I'm Andrew Alvarez, a web developer with a passion for creating
+        {`I'm Andrew Alvarez, a web developer with a passion for creating
         beautiful and functional websites. I have honed my skills in web
         development and design to deliver exceptional results. My expertise lies
         in frontend development using frameworks like Next.js, and I am always
         up for a new challenge. Whether you need a simple website or a complex
         web application, I have the knowledge and skills to bring your vision to
-        life.
+        life.`}
       </p>
 
       <p className={styles.text2}>
