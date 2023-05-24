@@ -14,3 +14,117 @@
   /* height: 1rem; */
   /* margin-right: 20rem; */
 }
+
+.nav-responsive {
+  display: none;
+}
+
+.nav-mobile {
+  position: fixed;
+  margin-top: 5vh;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  animation: 1s 1 slidein;
+  background-size: 3rem 3rem;
+  background-color: #2d3237;
+  opacity: 1;
+}
+
+.nav-mobile ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-size: 2rem;
+  gap: 2rem;
+}
+
+.nav-mobile a {
+  text-decoration: none;
+  color: var(--text);
+  position: relative;
+}
+
+.nav-li-0 {
+  animation: 1.9s 1 alternate slidein0;
+}
+.nav-li-1 {
+  animation: 1.6s 1 alternate slidein0;
+}
+.nav-li-2 {
+  animation: 1.3s 1 alternate slidein0;
+}
+.nav-li-3 {
+  animation: 1s 1 alternate slidein0;
+}
+
+.nav-li-0-exit {
+  animation: 1.9s 1 alternate slideout0;
+}
+.nav-li-1-exit {
+  animation: 1.6s 1 alternate slideout0;
+}
+.nav-li-2-exit {
+  animation: 1.3s 1 alternate slideout0;
+}
+.nav-li-3-exit {
+  animation: 1s 1 alternate slideout0;
+}
+
+.nav-animation {
+  animation: 1s 1 alternate slidein;
+}
+
+.nav-animation-exit {
+  animation: 1s 1 slideout;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+
+@keyframes slidein0 {
+  from {
+    margin-left: 100%;
+    /* width: 300%; */
+  }
+
+  to {
+    margin-left: 0%;
+    /* width: 100%; */
+  }
+}
+@keyframes slideout0 {
+  from {
+    margin-left: 0%;
+    /* width: 300%; */
+  }
+
+  to {
+    margin-left: 100%;
+    /* width: 100%; */
+  }
+}

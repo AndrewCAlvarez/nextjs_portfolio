@@ -60,6 +60,8 @@
 }
 
 .button:hover {
-  background-color: var(--primary);
-  color: var(--text);
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  /* border: 5px solid var(--primary); */
+  box-shadow: -1rem 0.5rem 0.5rem var(--primary);
 }

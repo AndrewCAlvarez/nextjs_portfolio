@@ -17,10 +17,10 @@ const konreadsLink = 'https://andrewcalvarez.github.io/konreads/';
 export default function Experience() {
   return (
     <section
-      id='experience'
+      id='projects'
       className={[styles.container, styles['section-about']].join(' ')}
     >
-      <Heading title='Experience' />
+      <Heading title='Projects' />
       <Project
         image={UrbanUndergroundHero}
         title={'Urban Underground'}
