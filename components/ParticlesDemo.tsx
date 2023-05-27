@@ -1,8 +1,8 @@
-import { useCallback } from "react";
-import type { Container, Engine } from "tsparticles-engine";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import styles from "./ParticlesDemo.module.css";
+import { useCallback } from 'react';
+import type { Container, Engine } from 'tsparticles-engine';
+import Particles from 'react-particles';
+import { loadFull } from 'tsparticles';
+import styles from './ParticlesDemo.module.css';
 
 export default function ParticlesDemo() {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -23,15 +23,15 @@ export default function ParticlesDemo() {
   return (
     <div className={styles.particlesDemo}>
       <Particles
-        id="tsparticles"
+        id='tsparticles'
         className={styles.tsParticles}
         init={particlesInit}
         loaded={particlesLoaded}
-        height="20px"
+        height='20px'
         options={{
           background: {
             color: {
-              value: "#343a40",
+              value: '#343a40',
             },
           },
           fpsLimit: 120,
@@ -39,11 +39,11 @@ export default function ParticlesDemo() {
             events: {
               onClick: {
                 enable: true,
-                mode: "push",
+                mode: 'push',
               },
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: 'repulse',
               },
               resize: true,
             },
@@ -59,10 +59,10 @@ export default function ParticlesDemo() {
           },
           particles: {
             color: {
-              value: "#adb5bd",
+              value: '#adb5bd',
             },
             links: {
-              color: "#adb5bd",
+              color: '#adb5bd',
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -72,10 +72,10 @@ export default function ParticlesDemo() {
               enable: false,
             },
             move: {
-              direction: "none",
+              direction: 'none',
               enable: true,
               outModes: {
-                default: "bounce",
+                default: 'bounce',
               },
               random: false,
               speed: 2,
@@ -92,7 +92,7 @@ export default function ParticlesDemo() {
               value: 0.5,
             },
             shape: {
-              type: "circle",
+              type: 'circle',
             },
             size: {
               value: { min: 1, max: 5 },

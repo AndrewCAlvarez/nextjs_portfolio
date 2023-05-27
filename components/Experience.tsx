@@ -5,6 +5,7 @@ import UrbanUndergroundHero from '../public/websites/UrbanUnderGroundHero.png';
 import KonreadsHero from '../public/websites/KonreadsHero.jpg';
 import Heading from './Heading';
 import Project from './Project';
+import { motion } from 'framer-motion';
 
 const urbanUndergroundText =
   'Urban Underground - HTML, CSS, Javascript - Urban Underground is a personal project where I took the lessons learned about web design to create a beautiful page for a fictitious fashion magazine.';
@@ -21,13 +22,15 @@ export default function Experience() {
       className={[styles.container, styles['section-about']].join(' ')}
     >
       <Heading title='Projects' />
-      <Project
-        image={UrbanUndergroundHero}
-        title={'Urban Underground'}
-        tag={'Fashion'}
-        text={urbanUndergroundText}
-        link={urbanUndergroundLink}
-      />
+      <motion.div className={styles['wrapper-project']}>
+        <Project
+          image={UrbanUndergroundHero}
+          title={'Urban Underground'}
+          tag={'Fashion'}
+          text={urbanUndergroundText}
+          link={urbanUndergroundLink}
+        />
+      </motion.div>
       <Project
         image={KonreadsHero}
         title={'Konreads'}
