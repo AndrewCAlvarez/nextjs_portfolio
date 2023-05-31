@@ -3,7 +3,7 @@ import utils from '../styles/utils.module.css';
 import styles from './About.module.css';
 import headshot from '../public/headshot.jpg';
 import { useEffect } from 'react';
-import Heading from './Heading';
+import Heading from './utilities/Heading';
 import Head from 'next/head';
 
 export default function About() {

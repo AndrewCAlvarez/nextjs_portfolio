@@ -3,9 +3,10 @@
   /* height: 200rem; */
   /* margin-top: 8rem; */
   background-color: rgba(0, 0, 0, 0.2);
-  padding-top: 8rem;
-  /* padding-bottom: 12rem; */
-  height: 85vh;
+  /* padding-top: 8rem;
+  padding-bottom: 12rem; */
+  padding: 8rem 5% 12rem 5%;
+  /* height: 85vh; */
 }
 
 .tag {

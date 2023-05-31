@@ -1,10 +1,10 @@
 import styles from './Hero.module.css';
 import utils from '../styles/utils.module.css';
-import ParticlesDemo from './ParticlesDemo';
+import ParticlesDemo from './utilities/ParticlesDemo';
 
 export default function Hero() {
   return (
-    <section id='home' className={`${styles.hero} ${utils.container}`}>
+    <section id='home' className={`${styles.hero}`}>
       <ParticlesDemo />
 
       <p className={styles.tag}>Hi, my name is</p>

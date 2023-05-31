@@ -1,6 +1,6 @@
 import utils from '../styles/utils.module.css';
 import styles from './Contact.module.css';
-import Heading from './Heading';
+import Heading from './utilities/Heading';
 
 export default function Contact() {
   return (

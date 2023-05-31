@@ -1,19 +1,93 @@
 .nav {
   position: fixed;
-  top: 0;
-  width: 100%;
-  height: 5vh;
+  /* top: 0; */
+  /* width: 100%; */
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--black-shade);
   z-index: 1000;
+  color: var(--text);
+
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-.iconMenu {
-  /* height: 1rem; */
-  /* margin-right: 20rem; */
+.background {
+  position: absolute;
+  top: 0;
+  left: 110;
+  bottom: 0;
+  width: 3003px;
+  background: #fff;
 }
+
+.icon-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.icon-menu {
+  background-color: var(--text);
+  position: relative;
+  height: 2px;
+  width: 2rem;
+}
+
+.icon-menu::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text);
+  top: -10px;
+}
+
+.icon-menu::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text);
+  top: 10px;
+}
+
+/* Closed menu state */
+/* .icon-menu {
+  background-color: var(--text);
+  position: relative;
+  height: 2px;
+  width: 2rem;
+}
+
+.icon-menu::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text);
+
+  transform: rotate(45deg);
+}
+
+.icon-menu::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text);
+
+  transform: rotate(-45deg);
+} */
 
 .nav-responsive {
   display: none;

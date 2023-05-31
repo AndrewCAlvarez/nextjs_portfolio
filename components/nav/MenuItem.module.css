@@ -1,0 +1,18 @@
+.menu-li {
+  display: flex;
+  justify-content: flex-start;
+  width: 10rem;
+}
+
+.menu-item {
+  color: var(--text);
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.menu-item-index {
+  border-bottom: 2px solid var(--secondary);
+}

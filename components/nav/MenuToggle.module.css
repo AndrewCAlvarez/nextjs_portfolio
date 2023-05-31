@@ -1,0 +1,76 @@
+.button-toggle {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  /* position: absolute; */
+  top: 18px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-menu {
+  background-color: var(--text);
+  position: relative;
+  height: 2px;
+  width: 2rem;
+}
+
+.icon-menu::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text);
+  top: -10px;
+}
+
+.icon-menu::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text);
+  top: 10px;
+}
+
+/* Closed menu state */
+/* .icon-menu {
+  background-color: var(--text);
+  position: relative;
+  height: 2px;
+  width: 2rem;
+}
+
+.icon-menu::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text);
+
+  transform: rotate(45deg);
+}
+
+.icon-menu::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text);
+
+  transform: rotate(-45deg);
+} */
+
+.menu-bar {
+  color: var(--text);
+  background-color: var(--text);
+}

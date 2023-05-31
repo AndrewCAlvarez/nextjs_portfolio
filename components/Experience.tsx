@@ -3,7 +3,7 @@ import styles from './Experience.module.css';
 import Image from 'next/image';
 import UrbanUndergroundHero from '../public/websites/UrbanUnderGroundHero.png';
 import KonreadsHero from '../public/websites/KonreadsHero.jpg';
-import Heading from './Heading';
+import Heading from './utilities/Heading';
 import Project from './Project';
 import { motion } from 'framer-motion';
 
