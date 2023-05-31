@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { MenuToggle } from './MenuToggle';
 import { Navigation } from './Navigation';
 import Logo from '../../public/PortfolioLogo.svg';
+import LogoBordered from '../../public/PortfolioLogoBordered.svg';
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -47,7 +48,7 @@ export default function Nav() {
           height={75}
           width={75}
           priority
-          src={Logo}
+          src={LogoBordered}
           alt='acalvarez.com logo'
         />
         <MenuToggle toggle={() => setIsOpen((isOpen) => !isOpen)} />
