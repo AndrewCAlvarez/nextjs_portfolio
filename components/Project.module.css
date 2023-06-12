@@ -41,10 +41,18 @@
   font-size: 1.2rem;
 }
 
+.project-links-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: var(--secondary);
   background: var(--blue);
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 1.2rem;
 }

@@ -3,6 +3,7 @@ import utils from '../styles/utils.module.css';
 import Image, { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
 import Tag from './tags/Tag';
+import { FaGithubAlt } from 'react-icons/fa';
 
 interface Props {
   tag: string;
@@ -40,9 +41,14 @@ export default function Project(props: Props) {
           </div>
           <p className={styles.text}>{props.text}</p>
 
-          <a className={styles.link} href={props.link}>
-            Live Demo &rarr;
-          </a>
+          <div className={styles['project-links-container']}>
+            <a className={styles.link} href={props.link}>
+              <FaGithubAlt />
+            </a>
+            <a className={styles.link} href={props.link}>
+              Live Demo &rarr;
+            </a>
+          </div>
         </div>
       </motion.div>
     </>
