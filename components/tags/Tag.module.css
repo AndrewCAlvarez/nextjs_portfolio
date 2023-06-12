@@ -1,0 +1,5 @@
+.tag {
+  color: var(--secondary);
+  background: var(--blue);
+  padding: 0.2rem 0.4rem;
+}

@@ -1,10 +1,10 @@
-.section-about {
+.section-projects {
   background-color: var(--black);
   padding-bottom: 4rem;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
   align-content: center;
-  justify-items: center;
+  justify-items: center; */
 }
 
 .sectionHeader {
@@ -15,6 +15,13 @@
   height: 100%;
   transform-style: preserve-3d;
   z-index: -1;
+}
+
+.projects-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-items: center;
 }
 
 .wrapper-project {

@@ -17,27 +17,26 @@ const konreadsLink = 'https://andrewcalvarez.github.io/konreads/';
 
 export default function Experience() {
   return (
-    <section
-      id='projects'
-      className={[styles.container, styles['section-about']].join(' ')}
-    >
+    <section id='projects' className={styles['section-projects']}>
       <Heading title='Projects' />
-      <motion.div className={styles['wrapper-project']}>
+      <motion.div className={styles['projects-card-container']}>
         <Project
           image={UrbanUndergroundHero}
           title={'Urban Underground'}
           tag={'Fashion'}
+          skills={['HTML', 'CSS', 'JavaScript']}
           text={urbanUndergroundText}
           link={urbanUndergroundLink}
         />
+        <Project
+          image={KonreadsHero}
+          title={'Konreads'}
+          tag={'Literature'}
+          skills={['HTML', 'CSS', 'JavaScript']}
+          text={konreadsText}
+          link={konreadsLink}
+        />
       </motion.div>
-      <Project
-        image={KonreadsHero}
-        title={'Konreads'}
-        tag={'Literature'}
-        text={konreadsText}
-        link={konreadsLink}
-      />
     </section>
   );
 }

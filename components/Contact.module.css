@@ -9,6 +9,11 @@
 }
 
 .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  padding: 1rem 1rem;
   text-decoration: none;
   color: var(--secondary);
   font-size: 1.2rem;

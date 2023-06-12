@@ -150,7 +150,6 @@ body {
   line-height: 1.75;
   color: var(--text);
   background-color: var(--black);
-  overflow-x: hidden;
 }
 
 .background {

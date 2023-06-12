@@ -12,10 +12,7 @@ export default function Contact() {
           like to discuss potential collaboration, I would love to hear from
           you.
         </p>
-        <p>
-          “Great things are done by a series of small things brought together.”
-          - Vincent Van Gogh
-        </p>
+
         <a className={styles.link} href='mailto:andrewcalvarez01@gmail.com'>
           andrewcalvarez01@gmail.com
         </a>

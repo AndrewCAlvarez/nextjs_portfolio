@@ -2,6 +2,8 @@
   margin-bottom: 8rem;
   padding: 0;
   width: 80vw;
+  /* outline: 1px solid var(--black-shadow); */
+  /* background: var(--blue-secondary); */
 }
 
 .image {
@@ -25,6 +27,11 @@
   font-size: 0.9rem;
 }
 
+.skill-tag-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .title {
   margin-bottom: 1.5rem;
 }
@@ -37,12 +44,7 @@
 .link {
   text-decoration: none;
   color: var(--secondary);
+  background: var(--blue);
+  padding: 1rem 2rem;
   font-size: 1.2rem;
-}
-
-.divider {
-  width: 90%;
-  height: 1px;
-  background: var(--text-shade);
-  margin-top: 2rem;
 }
