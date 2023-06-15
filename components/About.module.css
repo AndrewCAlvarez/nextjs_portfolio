@@ -3,10 +3,10 @@
   word-wrap: break-word;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  justify-content: center; /* Horizontally centers the items */
-  align-items: center; /* Vertically centers the items */
+  /* justify-content: center; 
+  align-items: center;  */
   padding-top: 6rem;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
 }
 
 .text1 {
@@ -33,49 +33,65 @@
   border-right: 1px solid var(--primary);
 }
 
+.heading-interests {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--text-shade);
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
 .ul-interests {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3.2rem;
 }
 
 .ul-interests li {
-  width: 250px;
+  width: 225px;
   /* height: 10rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.2rem;
   align-items: center;
   background: var(--blue);
   /* border: 1px solid red; */
-  box-shadow: 0.1rem 0rem 1rem var(--secondary);
+  /* box-shadow: 0.1rem 0rem 1rem var(--secondary); */
 }
 
 .icon-interest {
   font-size: 4.6rem;
-  height: 10rem;
+  height: 9rem;
   color: var(--primary);
   /* border: 1px solid red; */
 }
 
 .text-interest-container {
-  /* border: 1px solid red; */
-  height: 4rem;
+  height: 3.2rem;
   width: 100%;
+  background: var(--black-shade);
+  color: var(--text-shade);
+}
+
+.text-interest {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--black-shade);
+  height: 100%;
+  letter-spacing: 2px;
+  color: var(--secondary);
 }
 
 .picContainer {
-  border-top: 1px solid var(--primary);
-  border-bottom: 1px solid var(--primary);
-  width: 100%;
+  /* border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary); */
+  /* width: 100%; */
   display: flex;
   justify-content: center;
+  background: var(--secondary);
   /* position: relative; */
   /* border: 1px solid black; */
   /* height: 15rem; */
@@ -88,13 +104,20 @@
   /* gap: 0.3rem; */
 }
 
+.icon-profile {
+  color: var(--black);
+  font-size: 6rem;
+}
+
 .profilePic {
   transition: all 0.3s;
   /* filter: grayscale(60%); */
   height: 100%;
   width: 50%;
-  border-left: 1px solid var(--primary);
-  border-right: 1px solid var(--primary);
+  /* border-left: 1px solid var(--primary);
+  border-right: 1px solid var(--primary); */
+  filter: grayscale(0.9);
+  /* background: var(--primary); */
 }
 
 .profilePic0 {

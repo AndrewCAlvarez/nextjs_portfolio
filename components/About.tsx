@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import utils from '../styles/utils.module.css';
 import styles from './About.module.css';
-import headshot from '../public/headshot.jpg';
+import headshot from '../public/profile_beanie.png';
 import { useEffect } from 'react';
 import Heading from './utilities/Heading';
 import Head from 'next/head';
 import { FaPaintBrush, FaMusic, FaBone, FaBook } from 'react-icons/fa';
-import { LuDog, LuBrush, LuMusic } from 'react-icons/lu';
+import { LuDog, LuBrush, LuMusic, LuBookMarked } from 'react-icons/lu';
+import { TbMessageCircle2Filled } from 'react-icons/tb';
+import { motion } from 'framer-motion';
 
 export default function About() {
   function handleDisplayPic() {
@@ -48,103 +50,116 @@ export default function About() {
       </h2> */}
       <Heading title='About Me' />
       <div className={styles.picContainer}>
-        {/* This is for the glitch effect */}
-        {/* <Image
-        className={[styles.glitch, styles.glitch1].join(" ")}
-        src={headshot}
-        alt="Picture of Andrew."
-        // width={250}
-        // height={250}
-      />
-      <Image
-        className={[styles.glitch, styles.glitch2].join(" ")}
-        src={headshot}
-        alt="Picture of Andrew."
-        // width={250}
-        // height={250}
-      />
-      <Image
-        className={[styles.glitch, styles.glitch3].join(" ")}
-        src={headshot}
-        alt="Picture of Andrew."
-        // width={250}
-        // height={250}
-      /> */}
-
-        {/* Image gallery */}
         <Image
-          className={[styles.profilePic, styles.profilePic0].join(' ')}
+          className={[styles.profilePic].join(' ')}
           src={headshot}
           alt='Picture of Andrew.'
-          // width={250}
-          // height={250}
         />
-        {/* <Image
-          className={[styles.profilePic, styles.profilePic1].join(" ")}
-          src={headshot}
-          alt="Picture of Andrew."
-          // width={200}
-          // height={200}
-          fill
-        />
-        <Image
-          className={[styles.profilePic, styles.profilePic2].join(" ")}
-          src={headshot}
-          alt="Picture of Andrew."
-          // width={200}
-          // height={200}
-          fill
-        />
-        <Image
-          className={[styles.profilePic, styles.profilePic3].join(" ")}
-          src={headshot}
-          alt="Picture of Andrew."
-          width={200}
-          height={200}
-        /> */}
+        <TbMessageCircle2Filled className={styles['icon-profile']} />
       </div>
       <p className={styles.text1}>
         {`I'm Andrew Alvarez, a web developer with a passion for creating
-        beautiful and functional websites. I have honed my skills in web
-        development and design to deliver exceptional results. My expertise lies
-        in frontend development using frameworks like Next.js, and I am always
-        up for a new challenge. Whether you need a simple website or a complex
-        web application, I have the knowledge and skills to bring your vision to
-        life.`}
+        beautiful and functional websites. My expertise lies
+        in frontend development using frontend frameworks such as React, and I am always
+        up for a new challenge.`}
       </p>
 
-      <p className={styles.text2}>
-        {` Take a look at my portfolio to see some of my recent projects, and feel
-        free to get in touch with me to discuss how I can help you create a
-        website that represents your brand and engages your audience.`}
-      </p>
+      <h3 className={styles['heading-interests']}>After work I'm...</h3>
 
       <ul className={[styles['ul-interests']].join(' ')}>
-        <li>
-          <LuMusic className={styles['icon-interest']} />
+        <motion.li
+          initial={{ boxShadow: '0rem 0rem 0rem var(--secondary)' }}
+          whileInView={{
+            boxShadow: '0.1rem 0rem 2rem var(--secondary)',
+            transition: { duration: 0.4 },
+          }}
+        >
+          {' '}
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.4 },
+            }}
+          >
+            <LuMusic className={styles['icon-interest']} />{' '}
+          </motion.div>
           <div className={styles['text-interest-container']}>
-            <p>{`Creating electronic music`}</p>
+            <p className={styles['text-interest']}>{`Creating music`}</p>
           </div>
-        </li>
-        <li>
-          <LuBrush className={styles['icon-interest']} />{' '}
+        </motion.li>
+        <motion.li
+          initial={{ boxShadow: '0rem 0rem 0rem var(--secondary)' }}
+          whileInView={{
+            boxShadow: '0.1rem 0rem 2rem var(--secondary)',
+            transition: { duration: 0.4 },
+          }}
+        >
+          {' '}
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.4 },
+            }}
+          >
+            <LuBrush className={styles['icon-interest']} />{' '}
+          </motion.div>
           <div className={styles['text-interest-container']}>
-            <p>{`Painting miniatures`}</p>
+            <p className={styles['text-interest']}>{`Painting miniatures`}</p>
           </div>
-        </li>
-        <li>
-          <LuDog className={styles['icon-interest']} />
+        </motion.li>
+        <motion.li
+          initial={{ boxShadow: '0rem 0rem 0rem var(--secondary)' }}
+          whileInView={{
+            boxShadow: '0.1rem 0rem 2rem var(--secondary)',
+            transition: { duration: 0.4 },
+          }}
+        >
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.4 },
+            }}
+          >
+            <LuDog className={styles['icon-interest']} />
+          </motion.div>
           <div className={styles['text-interest-container']}>
-            <p>{`Hiking with my dog`}</p>
+            <p className={styles['text-interest']}>{`Hiking with my dog`}</p>
           </div>
-        </li>
-        <li>
-          <FaBook className={styles['icon-interest']} />
+        </motion.li>
+        <motion.li
+          initial={{ boxShadow: '0rem 0rem 0rem var(--secondary)' }}
+          whileInView={{
+            boxShadow: '0.1rem 0rem 2rem var(--secondary)',
+            transition: { duration: 0.4 },
+          }}
+        >
+          {' '}
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.4 },
+            }}
+          >
+            <LuBookMarked className={styles['icon-interest']} />{' '}
+          </motion.div>
           <div className={styles['text-interest-container']}>
-            <p>{`Stuck in a good book`}</p>
+            <p className={styles['text-interest']}>{`Stuck in a book`}</p>
           </div>
-        </li>
+        </motion.li>
       </ul>
+
+      <p className={styles.text2}>
+        {` Check out my recent projects, and feel
+        free open the live demo or view the Github repos.`}
+      </p>
     </section>
   );
 }

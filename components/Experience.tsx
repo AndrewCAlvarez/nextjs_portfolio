@@ -3,6 +3,7 @@ import styles from './Experience.module.css';
 import Image from 'next/image';
 import UrbanUndergroundHero from '../public/websites/UrbanUnderGroundHero.png';
 import KonreadsHero from '../public/websites/KonreadsHero.jpg';
+import PortfolioHero from '../public/websites/portfolioHero.jpg';
 import Heading from './utilities/Heading';
 import Project from './Project';
 import { motion } from 'framer-motion';
@@ -19,7 +20,7 @@ export default function Experience() {
       <Heading title='Projects' />
       <motion.div className={styles['projects-card-container']}>
         <Project
-          image={UrbanUndergroundHero}
+          image={PortfolioHero}
           title={'Portfolio'}
           tag={'Software'}
           skills={[
