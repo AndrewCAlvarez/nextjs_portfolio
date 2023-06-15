@@ -42,10 +42,10 @@ export default function Project(props: Props) {
           <p className={styles.text}>{props.text}</p>
 
           <div className={styles['project-links-container']}>
-            <a className={styles.link} href={props.link}>
+            <a className={styles.link} href={props.github} target='_blank'>
               <FaGithubAlt />
             </a>
-            <a className={styles.link} href={props.link}>
+            <a className={styles.link} href={props.link} target='_blank'>
               Live Demo &rarr;
             </a>
           </div>

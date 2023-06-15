@@ -3,7 +3,9 @@
   word-wrap: break-word;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding-top: 4rem;
+  justify-content: center; /* Horizontally centers the items */
+  align-items: center; /* Vertically centers the items */
+  padding-top: 6rem;
   padding-bottom: 4rem;
 }
 
@@ -29,6 +31,43 @@
   /* text-decoration: underline var(--secondary); */
   border-left: 1px solid var(--primary);
   border-right: 1px solid var(--primary);
+}
+
+.ul-interests {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ul-interests li {
+  width: 250px;
+  /* height: 10rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: center;
+  background: var(--blue);
+  /* border: 1px solid red; */
+  box-shadow: 0.1rem 0rem 1rem var(--secondary);
+}
+
+.icon-interest {
+  font-size: 4.6rem;
+  height: 10rem;
+  color: var(--primary);
+  /* border: 1px solid red; */
+}
+
+.text-interest-container {
+  /* border: 1px solid red; */
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black-shade);
 }
 
 .picContainer {

@@ -5,6 +5,8 @@ import headshot from '../public/headshot.jpg';
 import { useEffect } from 'react';
 import Heading from './utilities/Heading';
 import Head from 'next/head';
+import { FaPaintBrush, FaMusic, FaBone, FaBook } from 'react-icons/fa';
+import { LuDog, LuBrush, LuMusic } from 'react-icons/lu';
 
 export default function About() {
   function handleDisplayPic() {
@@ -112,10 +114,37 @@ export default function About() {
       </p>
 
       <p className={styles.text2}>
-        Take a look at my portfolio to see some of my recent projects, and feel
+        {` Take a look at my portfolio to see some of my recent projects, and feel
         free to get in touch with me to discuss how I can help you create a
-        website that represents your brand and engages your audience.
+        website that represents your brand and engages your audience.`}
       </p>
+
+      <ul className={[styles['ul-interests']].join(' ')}>
+        <li>
+          <LuMusic className={styles['icon-interest']} />
+          <div className={styles['text-interest-container']}>
+            <p>{`Creating electronic music`}</p>
+          </div>
+        </li>
+        <li>
+          <LuBrush className={styles['icon-interest']} />{' '}
+          <div className={styles['text-interest-container']}>
+            <p>{`Painting miniatures`}</p>
+          </div>
+        </li>
+        <li>
+          <LuDog className={styles['icon-interest']} />
+          <div className={styles['text-interest-container']}>
+            <p>{`Hiking with my dog`}</p>
+          </div>
+        </li>
+        <li>
+          <FaBook className={styles['icon-interest']} />
+          <div className={styles['text-interest-container']}>
+            <p>{`Stuck in a good book`}</p>
+          </div>
+        </li>
+      </ul>
     </section>
   );
 }
