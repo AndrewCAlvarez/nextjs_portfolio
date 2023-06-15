@@ -1,0 +1,17 @@
+.container {
+  color: var(--black);
+  font-size: 6rem;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container::before {
+  content: 'Hey';
+  top: 23px;
+  position: absolute;
+  color: var(--secondary);
+  font-size: 1.8rem;
+}

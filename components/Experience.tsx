@@ -8,8 +8,10 @@ import Heading from './utilities/Heading';
 import Project from './Project';
 import { motion } from 'framer-motion';
 
+const portfolioText = `This is the website you're currently on! I wanted a place to show my past and future projects while working with something new, Next.js, and all the challenges that come with it.`;
+
 const urbanUndergroundText =
-  'Urban Underground - HTML, CSS, Javascript - Urban Underground is a personal project where I took the lessons learned about web design to create a beautiful page for a fictitious fashion magazine.';
+  'Urban Underground is a personal project where I took the lessons learned about web design to create a beautiful page for a fictitious fashion magazine.';
 
 const konreadsText =
   'Konreads - HTML, CSS, Javascript - Dark and elegant, Konreads is a book blog where the owner requested a design that was less standard than your typical blog.';
@@ -32,7 +34,7 @@ export default function Experience() {
             'CSS',
             'JavaScript',
           ]}
-          text={urbanUndergroundText}
+          text={portfolioText}
           link={'#'}
           github={'https://github.com/AndrewCAlvarez/nextjs_portfolio'}
         />

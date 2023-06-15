@@ -8,6 +8,7 @@ import Head from 'next/head';
 import { FaPaintBrush, FaMusic, FaBone, FaBook } from 'react-icons/fa';
 import { LuDog, LuBrush, LuMusic, LuBookMarked } from 'react-icons/lu';
 import { TbMessageCircle2Filled } from 'react-icons/tb';
+import ChatBubble from './misc/ChatBubble';
 import { motion } from 'framer-motion';
 
 export default function About() {
@@ -55,12 +56,13 @@ export default function About() {
           src={headshot}
           alt='Picture of Andrew.'
         />
-        <TbMessageCircle2Filled className={styles['icon-profile']} />
+        <ChatBubble />
+        {/* <TbMessageCircle2Filled className={styles['icon-profile']} /> */}
       </div>
       <p className={styles.text1}>
         {`I'm Andrew Alvarez, a web developer with a passion for creating
-        beautiful and functional websites. My expertise lies
-        in frontend development using frontend frameworks such as React, and I am always
+        fun and functional websites and applications. My expertise lies
+        in frontend development, and I am always
         up for a new challenge.`}
       </p>
 
