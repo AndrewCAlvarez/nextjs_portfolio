@@ -8,9 +8,11 @@ import { FaGithubAlt } from 'react-icons/fa';
 interface Props {
   tag: string;
   title: string;
-  skills: [];
+  image: StaticImageData;
+  skills: string[];
   text: string;
   link: string;
+  github: string;
 }
 
 export default function Project(props: Props) {
