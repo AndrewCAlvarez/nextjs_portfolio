@@ -8,6 +8,11 @@
   color: var(--text);
 }
 
+.text {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 .link {
   display: flex;
   justify-content: center;

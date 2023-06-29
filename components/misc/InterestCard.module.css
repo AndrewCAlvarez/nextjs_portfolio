@@ -1,0 +1,22 @@
+.icon-interest {
+    font-size: 4.6rem;
+    height: 9rem;
+    color: var(--primary);
+    /* border: 1px solid red; */
+}
+
+.text-interest-container {
+    height: 3.2rem;
+    width: 100%;
+    background: var(--black-shade);
+    color: var(--text-shade);
+}
+
+.text-interest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    letter-spacing: 2px;
+    color: var(--secondary);
+}
