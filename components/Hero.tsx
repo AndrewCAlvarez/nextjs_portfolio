@@ -16,7 +16,7 @@ export default function Hero() {
         also be easy to use and navigate.`}
 			</p>
 			<button className={styles.button}><a href="#contact">
-				{`Let's build something!`}
+				{`Let's get started!`}
 			</a></button>
 		</section>
 	);

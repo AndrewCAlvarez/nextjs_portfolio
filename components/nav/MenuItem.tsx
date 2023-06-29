@@ -30,7 +30,7 @@ export const MenuItem = (props) => {
       <Link className={styles['menu-item']} href={`#${props.i}`}>
         <span>
           <span className={styles['menu-item-index']}>0{props.index + 1}</span>.
-        </span>{' '}
+        </span>
         {props.i}
       </Link>
     </motion.li>

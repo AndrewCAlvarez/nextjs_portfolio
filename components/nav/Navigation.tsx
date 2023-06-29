@@ -4,7 +4,6 @@ import { MenuItem } from './MenuItem';
 import styles from './Navigation.module.css';
 import { link } from 'fs';
 
-// I dont know how to animate and show this component once the toggle button is pressed. Where is the state for this?
 const variants = {
   open: {
     x: 0,

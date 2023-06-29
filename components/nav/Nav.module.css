@@ -1,3 +1,5 @@
+
+
 .nav {
   position: fixed;
   /* top: 0; */
@@ -24,6 +26,10 @@
   bottom: 0;
   width: 3003px;
   background: #fff;
+}
+
+.logo {
+    display: flex;
 }
 
 .icon-menu-container {
