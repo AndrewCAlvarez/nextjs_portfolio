@@ -16,3 +16,18 @@
 .menu-item-index {
   border-bottom: 2px solid var(--secondary);
 }
+
+@media (min-width: 1040px) {
+    .menu-li {
+        border-bottom: 2px solid var(--secondary);
+        gap: 5rem;
+    }
+
+    .menu-item {
+        gap: 0rem;
+    }
+
+    .menu-item-index {
+        border: none;
+    }
+}

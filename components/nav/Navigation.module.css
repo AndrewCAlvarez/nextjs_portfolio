@@ -18,15 +18,17 @@
 
 @media (min-width: 1040px) {
     .nav-list {
-        gap: 0rem;
+        gap: 1rem;
         font-size: 1rem;
         letter-spacing: 3px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         height: 8vh;
+        width: 8rem;
         top: 0;
         padding-top: 0;
+        margin-right: 5%;
     }
 
 }

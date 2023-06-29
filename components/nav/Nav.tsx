@@ -41,8 +41,8 @@ export default function Nav() {
 				<a className={styles.logo} href="#">
 
 					<Image
-						height={75}
-						width={75}
+						height={70}
+						width={70}
 						priority
 						src={LogoBordered}
 						alt='acalvarez.com logo'
