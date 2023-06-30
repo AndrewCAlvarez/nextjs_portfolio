@@ -28,3 +28,23 @@
     transform: translateY(-100px);
   }
 }
+
+@media (min-width: 1331px) {
+    .heading {
+        color: var(--text);
+        font-weight: bold;
+        /* text-transform: uppercase; */
+        /* padding-bottom: 20px; */
+        border-bottom: 2px solid var(--secondary);
+        /* padding-left: 5%; */
+        padding-bottom: 0.6rem;
+        max-width: 36rem;
+        padding-left: 0;
+        /* color: #fff; */
+        /*justify-self: center;*/
+        text-shadow: 0 0 7px var(--text);
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+}
