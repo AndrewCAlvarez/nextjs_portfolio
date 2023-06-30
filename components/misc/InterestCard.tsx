@@ -9,6 +9,7 @@ const InterestCard = (props: any) => {
                 boxShadow: '0.1rem 0rem 2rem var(--secondary)',
                 transition: { duration: 0.4 },
             }}
+            className={styles['interest-card']}
         >
             <motion.div
                 initial={{ y: 50, opacity: 0 }}
@@ -17,6 +18,7 @@ const InterestCard = (props: any) => {
                     opacity: 1,
                     transition: { duration: 0.4 },
                 }}
+                className={styles['icon-container']}
             >
                 <props.icon className={styles['icon-interest']} />
             </motion.div>

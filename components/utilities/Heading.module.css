@@ -1,16 +1,16 @@
 .heading {
-  margin-bottom: 4rem;
-  color: var(--text);
-  font-weight: bold;
-  /* text-transform: uppercase; */
-  /* padding-bottom: 20px;*/
-  border-bottom: 2px solid var(--secondary);
-  width: 95vw;
-  padding-left: 5%;
-  padding-bottom: 0.6rem;
-
-  /* color: #fff; */
-  text-shadow: 0 0 7px var(--text);
+    margin-bottom: 4rem;
+    color: var(--text);
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    /* padding-bottom: 20px;*/
+    border-bottom: 2px solid var(--secondary);
+    width: 95vw;
+    max-width: 30rem;
+    padding-left: 5%;
+    padding-bottom: 0.6rem;
+    /* color: #fff; */
+    text-shadow: 0 0 7px var(--text);
 }
 .slide-top {
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

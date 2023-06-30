@@ -2,6 +2,7 @@ import Image from 'next/image';
 import utils from '../styles/utils.module.css';
 import styles from './About.module.css';
 import headshot from '../public/profile_beanie.png';
+import RoseProfilePic from '../public/Roseportfolio.png';
 import { useEffect } from 'react';
 import Heading from './utilities/Heading';
 import Head from 'next/head';
@@ -58,6 +59,11 @@ export default function About() {
 					alt='Picture of Andrew.'
 				/>
 				<ChatBubble />
+				<Image
+					className={[styles.profilePic].join(' ')}
+					src={RoseProfilePic}
+					alt="Picture of Andrew's dog, Rose."
+				/>
 			</div>
 			<p className={styles.text1}>
 				{`I'm Andrew Alvarez, a web developer with a passion for creating
@@ -77,7 +83,7 @@ export default function About() {
 
 			<p className={styles.text2}>
 				{` Check out my recent projects, and feel
-        free open the live demo or view the Github repos.`}
+        free to open a live demo or view the Github repos.`}
 			</p>
 		</section>
 	);
