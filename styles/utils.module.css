@@ -19,3 +19,9 @@
   cursor: pointer;
   font-family: cursive;
 }
+
+@media (min-width: 1040px) {
+    .container {
+        padding: 0px 10%;
+    }
+}

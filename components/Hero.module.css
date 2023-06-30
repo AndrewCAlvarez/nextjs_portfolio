@@ -134,3 +134,38 @@
         max-width: 652px;
     }
 }
+
+@media (min-width: 1040px) {
+    .hero {
+        padding: 8rem 10% 12rem 10%;
+    }
+}
+
+@media (min-width: 1113px) {
+    .tag {
+        font-size: calc(1rem + 1vw);
+    }
+
+    .name {
+        font-size: calc(2.052rem + 0.5vw);
+    }
+    .text {
+        max-width: 750px;
+    }
+
+}
+
+@media (min-width: 1351px) {
+    .hero {
+        padding: 8rem 20% 12rem 20%;
+        height: 90vh;
+    }
+
+    .text {
+        font-size: calc(1rem + 0.6vw);
+    }
+    
+    .button {
+        padding: 1rem 3.2rem;
+    }
+}
