@@ -3,8 +3,10 @@
     "",
     "\\components",
     "\\components\\misc",
-    "\\pages"
+    "\\pages",
+    "\\public",
+    "\\styles"
   ],
-  "SelectedNode": "\\components\\misc\\InterestCard.module.css",
+  "SelectedNode": "\\components\\Project.tsx",
   "PreviewInSolutionExplorer": false
 }

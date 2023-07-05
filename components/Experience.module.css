@@ -2,10 +2,10 @@
   background-color: var(--black);
   padding-top: 6rem;
   padding-bottom: 4rem;
-  /* display: grid;
+   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
-  justify-items: center; */
+  justify-items: center; 
 }
 
 .sectionHeader {
@@ -25,9 +25,22 @@
   justify-items: center; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  padding: 0 5%;
+  border: 1px solid red;
+  max-width: 62rem;
+  justify-self: center;
 }
 
 .wrapper-project {
   /* width: 20%; */
   /* position: absolute; */
+}
+
+@media (min-width: 882px) {
+    .projects-card-container {
+        gap: 1rem;
+        justify-content: space-between;
+    }
 }

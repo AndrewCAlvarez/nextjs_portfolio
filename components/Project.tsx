@@ -6,53 +6,53 @@ import Tag from './tags/Tag';
 import { FaGithubAlt } from 'react-icons/fa';
 
 interface Props {
-  tag: string;
-  title: string;
-  image: StaticImageData;
-  skills: string[];
-  text: string;
-  link: string;
-  github: string;
+	tag: string;
+	title: string;
+	image: StaticImageData;
+	skills: string[];
+	text: string;
+	link: string;
+	github: string;
 }
 
 export default function Project(props: Props) {
-  return (
-    <>
-      <motion.div
-        initial={{ x: -100 }}
-        whileInView={{
-          x: 0,
-          transition: { duration: 0.4 },
-        }}
-        className={[utils.container, styles.project].join(' ')}
-      >
-        <div className={styles['text-content']}>
-          <p className={styles.tag}>{props.tag}</p>
-          <h5 className={styles.title}>{props.title}</h5>
-          <a href={props.link}>
-            <Image
-              src={props.image}
-              alt={`Hero section of portfolio project ${props.title}.`}
-              className={styles.image}
-            />
-          </a>
-          <div className={styles['skill-tag-container']}>
-            {props.skills?.map((skill) => (
-              <Tag key={skill + Math.random()} title={skill} />
-            ))}
-          </div>
-          <p className={styles.text}>{props.text}</p>
+	return (
+		<>
+			<motion.div
+				initial={{ x: -100 }}
+				whileInView={{
+					x: 0,
+					transition: { duration: 0.4 },
+				}}
+				className={[styles.project].join(' ')}
+			>
+				<div className={styles['text-content']}>
+					<p className={styles.tag}>{props.tag}</p>
+					<h5 className={styles.title}>{props.title}</h5>
+					<a href={props.link}>
+						<Image
+							src={props.image}
+							alt={`Hero section of portfolio project ${props.title}.`}
+							className={styles.image}
+						/>
+					</a>
+					<div className={styles['skill-tag-container']}>
+						{props.skills?.map((skill) => (
+							<Tag key={skill + Math.random()} title={skill} />
+						))}
+					</div>
+					<p className={styles.text}>{props.text}</p>
 
-          <div className={styles['project-links-container']}>
-            <a className={styles.link} href={props.github} target='_blank'>
-              <FaGithubAlt />
-            </a>
-            <a className={styles.link} href={props.link} target='_blank'>
-              Live Demo &rarr;
-            </a>
-          </div>
-        </div>
-      </motion.div>
-    </>
-  );
+					<div className={styles['project-links-container']}>
+						<a className={styles.link} href={props.github} target='_blank'>
+							<FaGithubAlt />
+						</a>
+						<a className={styles.link} href={props.link} target='_blank'>
+							Live Demo &rarr;
+						</a>
+					</div>
+				</div>
+			</motion.div>
+		</>
+	);
 }

@@ -19,20 +19,20 @@ const konreadsText =
 export default function Experience() {
   return (
     <section id='projects' className={styles['section-projects']}>
-      <Heading title='Projects' />
+          <Heading title='Projects' />
       <motion.div className={styles['projects-card-container']}>
         <Project
-          image={PortfolioHero}
+          image={UrbanUndergroundHero}
           title={'Portfolio'}
           tag={'Software'}
           skills={[
             'Next.js',
             'React',
             'TypeScript',
-            'Framer Motion',
-            'HTML',
-            'CSS',
-            'JavaScript',
+            //'Framer Motion',
+            //'HTML',
+            //'CSS',
+            //'JavaScript',
           ]}
           text={portfolioText}
           link={'#'}
@@ -48,7 +48,7 @@ export default function Experience() {
           github={'https://github.com/AndrewCAlvarez/rap-friends'}
         />
         <Project
-          image={KonreadsHero}
+          image={UrbanUndergroundHero}
           title={'Konreads'}
           tag={'Literature'}
           skills={['HTML', 'CSS', 'JavaScript']}

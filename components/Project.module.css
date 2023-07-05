@@ -1,59 +1,98 @@
 .project {
-  margin-bottom: 0rem;
-  width: 95vw;
-  max-width: 425px;
-  /* outline: 1px solid var(--black-shadow); */
-  /* background: var(--blue-secondary); */
+    margin-bottom: 0rem;
+    width: 95vw;
+    max-width: 312px;
+    /* outline: 1px solid var(--black-shadow); */
+    /* background: var(--blue-secondary); */
 }
 
 .image {
-  max-inline-size: 100%;
-  block-size: auto;
-  margin-bottom: 1.2rem;
+    max-inline-size: 100%;
+    block-size: auto;
+    /*margin-bottom: 1.2rem;*/
 }
 
 .text-content {
-  position: relative;
+    /* position: relative;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;*/
+    /*margin-top: 4rem;*/
+    /*margin-bottom: 4rem;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40rem;
 }
 
 .tag {
-  color: var(--secondary);
-  position: absolute;
-  top: -2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.9rem;
+    color: var(--secondary);
+    position: absolute;
+    top: -0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    /*height: 2rem;*/
 }
 
 .skill-tag-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    /*height: 5rem;*/
 }
 
 .title {
-  margin-bottom: 1.5rem;
+    /*margin-bottom: 1.5rem;*/
+    font-size: calc(1.25rem + 1.1vw);
 }
 
 .text {
-  color: var(--text-shade);
-  font-size: 1.2rem;
+    color: var(--text-shade);
+    font-size: 1.2rem;
+    height: 12rem;
 }
 
 .project-links-container {
-  display: flex;
-  gap: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: var(--secondary);
-  background: var(--blue);
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondary);
+    background: var(--blue);
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 826px) {
+    .title {
+        font-size: calc(1.25rem + 0.8vw);
+    }
+}
+
+@media (min-width: 882px) {
+    .project {
+        max-width: 253px;
+    }
+
+    .title {
+        font-size: calc(1.25rem + 0.2vw);
+    }
+}
+
+@media (min-width: 1020px) {
+
+    .text {
+        font-size: 1.1rem;
+        height: 12rem;
+    }
 }
