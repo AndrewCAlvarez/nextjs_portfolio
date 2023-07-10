@@ -1,6 +1,8 @@
+import { motion } from 'framer-motion';
 import utils from '../styles/utils.module.css';
 import styles from './Contact.module.css';
 import Heading from './utilities/Heading';
+
 
 export default function Contact() {
 	return (
@@ -12,9 +14,11 @@ export default function Contact() {
 					you.
 				</p>
 
-				<a className={styles.link} href='mailto:andrewcalvarez01@gmail.com'>
+			<motion.a
+				whileHover={{backgroundColor: "var(--primary)", color: "var(--blue)"}}
+				className={styles.link} href='mailto:andrewcalvarez01@gmail.com'>
 					andrewcalvarez01@gmail.com
-				</a>
+				</motion.a>
 		</section>
 	);
 }

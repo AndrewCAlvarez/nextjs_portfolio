@@ -102,9 +102,12 @@
         max-width: 253px;
     }
 
-
     .title {
         font-size: calc(1.25rem + 0.2vw);
+    }
+
+    .text {
+        margin-bottom: 6rem;
     }
 
 }
@@ -118,6 +121,7 @@
 
     .text {
         font-size: 1.1rem;
+        margin-bottom: 0;
     }
 }
 
