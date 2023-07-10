@@ -1,7 +1,11 @@
 .menu-li {
   display: flex;
   justify-content: flex-start;
-  width: 10rem;
+  width: 11rem;
+}
+
+.menu-li:hover {
+    background-color: var(--primary);
 }
 
 .menu-item {
@@ -11,6 +15,11 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.menu-item:hover {
+    color: var(--blue);
+    font-weight: bold;
 }
 
 .menu-item-index {
