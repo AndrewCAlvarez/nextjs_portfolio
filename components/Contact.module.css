@@ -6,11 +6,16 @@
   /* padding-top: 4rem; */
   padding-bottom: 4rem;
   color: var(--text);
+  justify-items: center;
 }
 
 .text {
     margin-bottom: 2rem;
     text-align: center;
+    color: var(--text-shade);
+    max-width: 38rem;
+    font-size: calc(1rem + 0.5vw);
+    padding: 0px 5%;
 }
 
 .link {
@@ -18,9 +23,47 @@
   justify-content: center;
   align-items: center;
   background: var(--blue);
-  padding: 1rem 1rem;
+  padding: 1rem 4rem 1rem;
   text-decoration: none;
   color: var(--secondary);
   font-size: 1.2rem;
   text-decoration: underline;
+  width: 70vw;
+}
+
+
+@media (min-width: 1107px) {
+    .text {
+        max-width: 54rem;
+    }
+}
+
+@media (min-width: 1424px) {
+    .text {
+        max-width: 60rem;
+    }
+}
+
+@media (min-width: 1742px) {
+    .text {
+        max-width: 64rem;
+    }
+}
+
+@media (min-width: 1953px) {
+    .text {
+        max-width: 68rem;
+    }
+}
+
+@media (min-width: 2163px) {
+    .text {
+        max-width: 74rem;
+    }
+}
+
+@media (min-width: 2473px) {
+    .text {
+        max-width: 78rem;
+    }
 }

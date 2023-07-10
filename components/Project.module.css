@@ -1,7 +1,7 @@
 .project {
     margin-bottom: 0rem;
-    width: 95vw;
-    max-width: 312px;
+    width: 70vw;
+    /*max-width: 312px;*/
     /* outline: 1px solid var(--black-shadow); */
     /* background: var(--blue-secondary); */
 }
@@ -32,7 +32,8 @@
 .tag {
     color: var(--secondary);
     position: absolute;
-    top: -0.4rem;
+    /*top: -0.4rem;*/
+    top: calc(-0.6rem - 0.28vh);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.9rem;
@@ -73,6 +74,22 @@
     font-size: 1.2rem;
 }
 
+@media(min-width: 560px) {
+    .tag {
+        top: calc(-0.8rem - 0.3vh);
+    }
+}
+
+@media (min-width: 726px) {
+    .text-content {
+        gap: 0.8rem;
+    }
+
+    .tag {
+        top: calc(-3.4rem - 0.3vh);
+    }
+}
+
 @media (min-width: 826px) {
     .title {
         font-size: calc(1.25rem + 0.8vw);
@@ -84,15 +101,48 @@
         max-width: 253px;
     }
 
+    .tag {
+        top: calc(-2rem - 0.3vh);
+    }
+
     .title {
         font-size: calc(1.25rem + 0.2vw);
+    }
+
+    .text {
+        height: 14rem;
     }
 }
 
 @media (min-width: 1020px) {
 
+    .project {
+        max-width: 40vw;
+        padding-bottom: 6rem;
+    }
+
     .text {
         font-size: 1.1rem;
-        height: 12rem;
     }
 }
+
+@media (min-width: 1140px) {
+    .project {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1418px) {
+    .tag {
+        top: calc(-2rem - 0.3vh);
+    }
+
+}
+
+@media (min-width: 1548px) {
+
+    .text {
+        font-size: 1.2rem;
+    }
+}
+

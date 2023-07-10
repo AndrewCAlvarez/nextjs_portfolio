@@ -27,10 +27,11 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 4rem;
-  padding: 0 5%;
-  border: 1px solid red;
-  max-width: 62rem;
+  /*padding: 0 5%;*/
+  /*border: 1px solid red;*/
+  /*max-width: 62rem;*/
   justify-self: center;
+  width: 90vw;
 }
 
 .wrapper-project {
@@ -38,9 +39,22 @@
   /* position: absolute; */
 }
 
+@media (min-width: 726px) {
+    .projects-card-container {
+        margin-top: 4rem;
+        gap: 8rem;
+    }
+}
+
 @media (min-width: 882px) {
     .projects-card-container {
         gap: 1rem;
         justify-content: space-between;
+    }
+}
+
+@media (min-width: 1140px) {
+    .projects-card-container {
+        justify-content: space-evenly;
     }
 }
