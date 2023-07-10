@@ -8,7 +8,7 @@ export default function Contact() {
 			<Heading title='Contact Me' />
 			<p className={styles.text} >
 					Thank you for visiting. If you have any questions, comments, or would
-					like to discuss potential collaboration, I would love to hear from
+					like to discuss working together, then I would love to hear from
 					you.
 				</p>
 
